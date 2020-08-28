@@ -1,0 +1,34 @@
+div{
+  border-radius:5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body{
+  text-align:center;
+  background-color: grey;
+}
+
+input[type=submit]{
+  background-color: blue;
+  color:white;
+  border-radius: 5px;
+  width: 7%;
+  height: 40px;
+}
+
+input[type=text], [type=email], [type=number] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=checkbox], [type=radio]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}

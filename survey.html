@@ -2,43 +2,66 @@
 <html lang="en">
   <head>
   <title id= "title"><h1>  Survey Form </h1></title>
+  <link rel="stylesheet" href="survey.css">
   </head>
 
   <body>
-    <p id= "description"> Please fill out the form below to assist us in our community project. </p>
+    <div>
+      <h1> Survey Form </h1>
+      <p id= "description"> Please fill out the form below to assist us in our community project. </p>
+
     <form id= "survey form">
       <label id= "name"> Name: </label>
       <input placeholder="Enter your name here" type="text" id="name-label">
 
-      <label id = "email"> Email Address: </label>
-      <input placeholder="Enter your email address" id="email-label" type="email"  pattern = "@ ." required>
+    </br>
 
+      <label id = "email"> Email Address: </label>
+      <input placeholder="Enter your email address" id="email-label" type="email" required>
+
+    </br>
       <label id="number"> Number: </label>
-      <input placeholder="Enter your number" id="number-label" type= "number" pattern = "0-9" min = "1" max ="10" required>
-    <label >Select your favorite</label>
+      <input placeholder="Enter your number" id="number-label" type= "number" pattern ="\d*" min = "1" max ="10" required>
+
+    </br>
+
+    <label >Select your favorite number: </label>
       <select id="dropdown">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-    </select>
-    <label id="radiobt">Make your choice</label>
-    <input type="radio"  name="sports">
-    <label >Tennis</label>
-    <input type="radio" name="sports">
-    <label>Football</label>
-    <input type="radio" name="sports">
-    <label>Basketball</label>
-    </form>
-    <label id="checkboxbt">Tick your preferences</label>
-    <input type="checkbox" value="color">
-    <label>Pink</label>
-    <input type="checkbox" value="color">
-    <label>Blue</label>
-    <input type="checkbox" value="color">
-    <label>White</label>
-    <label>Additional Comments</label>
-    <textarea name="addcomments" rows="4" cols="50"></textarea>
-    <input id="submit" type="submit" value="submit">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+    </br>
+
+    <label id="radiobt">Select your choice of sport: </label>
+      <input type="radio"  name="sports">
+        <label >Tennis</label>
+      <input type="radio" name="sports">
+        <label>Football</label>
+      <input type="radio" name="sports">
+        <label>Basketball</label>
+
+    </br>
+
+    <label id="checkboxbt">Tick your prefered colors: </label>
+      <input type="checkbox" value="color">
+        <label>Pink</label>
+      <input type="checkbox" value="color">
+        <label>Blue</label>
+      <input type="checkbox" value="color">
+        <label>White</label>
+
+    </br>
+
+    <label>Additional Comments:</label> </br>
+      <textarea name="addcomments" rows="4" cols="50"></textarea>
+
+    </br>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</div>
   </body>
 </html>
